@@ -125,10 +125,3 @@ h1{
     color: #ffff;
     background-color: #5e97d2;
 }
-.btn:hover{
-    color: #ffff;
-    border-color: transparent;
-    /* background-color: rgb(15, 53, 92);     */
-    box-shadow: 0px 0px 6px 2px #f3f5f5;
-    
-}
