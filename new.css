@@ -1,0 +1,51 @@
+body{
+    background-color: #fff;
+    padding: 20px ;
+}
+.input > input{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.input{
+    width: 240px;
+    position: relative;
+}
+.input path{
+}
+.line{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    stroke: #9b9b9b;   
+    height: 1px;
+}
+.line .focus,
+.line .valid,
+.line .invalid{
+    stroke: black;
+    stroke-dasharray: 0, 20;
+    transition: .2s;
+    stroke-dashoffset: -20;
+}
+.line .valid{
+    stroke: green;
+}
+.line .invalid{
+    stroke: red;
+}
+.input > input:focus ~ .line .focus,
+.input > input:valid ~ .line .valid,
+.input > input:invalid ~ .line .invalid{
+    stroke-dasharray:40, 0;
+    stroke-dashoffset: 0;
+}
+
+
+
+
+/* man svg */
+.box{
+    width: 300px;
+    height: auto;
+}
